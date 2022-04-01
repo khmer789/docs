@@ -44,7 +44,7 @@ jobs:
       - name: Remove script results file
         run: rm ./results.md
       - name: Create pull request
-        uses: peter-evans/create-pull-request@dcd5fd746d53dd8de555c0f10bca6c35628be47a
+        uses: peter-evans/create-pull-request@f1a7646cead32c950d90344a4fb5d4e926972a8f
         env:
           # Disable pre-commit hooks; they don't play nicely here
           HUSKY: '0'
